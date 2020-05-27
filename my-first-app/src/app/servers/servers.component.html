@@ -11,6 +11,7 @@ class="form-control"
 <button class = "btn btn-primery"
  [disabled] = "!allowNewServer"
  (click) = "onCreatServer()">Add server</button>
- <p>{{creatServerStatus}}</p>
+ <!-- <p>{{creatServerStatus}}</p> -->
+ <p *ngIf = "servercreated" >The server was created with the name of {{servername}}</p>
 <app-server></app-server>
 <app-server></app-server>
