@@ -12,6 +12,9 @@ class="form-control"
  [disabled] = "!allowNewServer"
  (click) = "onCreatServer()">Add server</button>
  <!-- <p>{{creatServerStatus}}</p> -->
- <p *ngIf = "servercreated" >The server was created with the name of {{servername}}</p>
+ <p *ngIf = "servercreated ">The server was created with the name of {{servername}}</p>
+ <!-- <ng-template #noServer>
+     <p>No server was created</p>
+ </ng-template> -->
 <app-server></app-server>
 <app-server></app-server>
